@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collocov - Détails de l'offre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white font-sans text-brand-dark antialiased min-h-screen">
+
+    <!-- Navigation (Standard) -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-1 font-bold text-xl tracking-tight cursor-pointer">
+            <span class="text-blue-500">/</span>COLLOCOV
+        </a>
+
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+            <a href="index.html" class="hover:text-black">Accueil</a>
+            <a href="find-ride.html" class="hover:text-black">MesTrajets</a>
+            <a href="chat.html" class="hover:text-black">Profils</a>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-4">
+            <button
+                class="px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium shadow-md shadow-blue-200">
+                Proposer Un Trajet
+            </button>
+            <div
+                class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden cursor-pointer hover:ring-2 hover:ring-blue-100 transition">
+                <img src="https://i.pravatar.cc/150?img=11" alt="User" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-8">
+
+        <!-- Top Section: Search & Filters -->
+        <div class="flex flex-col lg:flex-row items-center gap-6 mb-8 w-full">
+            <!-- Search Bar -->
+            <div class="relative w-full lg:flex-1">
+                <div class="absolute inset-y-0 left-0 pl-6 flex items-center pointer-events-none">
+                    <svg class="h-6 w-6 text-black" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </div>
+                <input type="text"
+                    class="block w-full pl-14 pr-4 py-4 bg-gray-50 border-none rounded-xl text-base text-gray-900 placeholder-gray-800 focus:ring-2 focus:ring-blue-500 focus:bg-white transition"
+                    placeholder="search...">
+            </div>
+
+            <!-- Filters -->
+            <div class="flex items-center gap-4 bg-white">
+                <span class="text-base font-medium text-gray-800 whitespace-nowrap">Filter by:</span>
+                <div class="flex flex-wrap gap-2">
+                    <button
+                        class="px-6 py-2 bg-gray-50 text-base font-medium text-gray-800 rounded-lg hover:bg-gray-100 transition border border-transparent hover:border-gray-200">
+                        Date
+                    </button>
+                    <button
+                        class="px-6 py-2 bg-gray-50 text-base font-medium text-gray-800 rounded-lg hover:bg-gray-100 transition border border-transparent hover:border-gray-200">
+                        Price
+                    </button>
+                    <button
+                        class="px-6 py-2 bg-gray-50 text-base font-medium text-gray-800 rounded-lg hover:bg-gray-100 transition border border-transparent hover:border-gray-200">
+                        Region
+                    </button>
+                    <!-- Blue Dots Buttons -->
+                    <button
+                        class="px-6 py-2 bg-blue-200 text-gray-800 rounded-lg hover:bg-blue-300 transition flex items-center justify-center">
+                        <span class="text-base font-bold pb-1">....</span>
+                    </button>
+                    <button
+                        class="px-6 py-2 bg-blue-200 text-gray-800 rounded-lg hover:bg-blue-300 transition flex items-center justify-center">
+                        <span class="text-base font-bold pb-1">....</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Grid -->
+        <div class="grid lg:grid-cols-3 gap-8">
+
+            <!-- Details Card (Left - 2 Cols) -->
+            <div class="lg:col-span-2 bg-gray-50 rounded-2xl p-8 lg:p-10 relative">
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-6">Offer Details</h2>
+
+                <!-- Info Row -->
+                <div
+                    class="flex items-center gap-8 text-gray-400 font-bold uppercase tracking-wide text-sm mb-6 border-b border-gray-200 pb-4">
+                    <span>NAME</span>
+                    <span class="text-gray-300">|</span>
+                    <span>LOCATION</span>
+                    <span class="text-gray-300">|</span>
+                    <span>DATE</span>
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <h3 class="text-sm font-bold text-gray-400 mb-2 uppercase">DESCRIPTION</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed text-justify">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus scelerisque pharetra dui, ac
+                        accumsan eros imperdiet vitae. In tristique velit et mi pharetra, id maximus justo laoreet. Nam
+                        consectetur orci eu ex congue, ac sodales elit commodo. Etiam vitae libero diam. Nullam
+                        vulputate vestibulum sapien. Praesent faucibus congue bibendum. Vestibulum lacinia massa urna,
+                        at malesuada purus venenatis et. Morbi a turpis tincidunt, pulvinar mi id, auctor ipsum. Fusce
+                        eu lobortis augue, eget ornare mauris. Duis id mi turpis. Etiam augue augue, vulputate et dictum
+                        ut, luctus dapibus ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos.
+                    </p>
+                </div>
+
+                <!-- Action Button -->
+                <div class="flex justify-end mt-8">
+                    <button onclick="window.location.href='payment.html'"
+                        class="px-8 py-3 bg-blue-700 text-white font-medium rounded-lg hover:bg-blue-800 transition shadow-lg shadow-blue-200">
+                        Detail de trajet
+                    </button>
+                </div>
+            </div>
+
+            <!-- Map (Right - 1 Col) -->
+            <div class="h-[400px] lg:h-auto rounded-2xl overflow-hidden relative shadow-sm border border-gray-100">
+                <iframe class="absolute inset-0 w-full h-full border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51066.86776104868!2d10.150244648632812!3d36.85848520000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34c6d1e93d45%3A0x6e2a2751509355f3!2sAriana%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1709666000000!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 mt-20">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-1 font-bold text-xl tracking-tight">
+                <span class="text-blue-500">/</span>COLLOCOV
+            </div>
+            <div class="text-gray-500 text-sm">
+                © 2025 Collocov. All rights reserved.
+            </div>
+            <div class="flex gap-6 text-gray-400 text-sm font-medium">
+                <a href="#" class="hover:text-blue-500 transition">Privacy</a>
+                <a href="#" class="hover:text-blue-500 transition">Terms</a>
+                <a href="#" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

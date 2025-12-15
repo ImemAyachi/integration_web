@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collocov - Liste des Trajets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-sans text-brand-dark antialiased min-h-screen">
+
+    <!-- Navigation (Standard) -->
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center gap-1 font-bold text-xl tracking-tight cursor-pointer">
+            <span class="text-blue-500">/</span>COLLOCOV
+        </a>
+
+        <!-- Links -->
+        <div class="hidden md:flex items-center gap-8 font-medium text-gray-700">
+            <a href="index.html" class="hover:text-black">Accueil</a>
+            <a href="find-ride.html" class="hover:text-black">MesTrajets</a>
+            <a href="chat.html" class="hover:text-black">Profils</a>
+        </div>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-4">
+            <button
+                class="px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium shadow-md shadow-blue-200">
+                Proposer Un Trajet
+            </button>
+            <div
+                class="w-10 h-10 rounded-full border border-gray-200 overflow-hidden cursor-pointer hover:ring-2 hover:ring-blue-100 transition">
+                <img src="https://i.pravatar.cc/150?img=11" alt="User" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Grid -->
+    <main class="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <!-- Card 1 -->
+        <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden p-3">
+            <!-- Simulated Map Area -->
+            <div class="w-full h-64 bg-gray-100 rounded-xl relative overflow-hidden mb-4 border border-gray-100">
+                <!-- Google Maps Iframe -->
+                <iframe class="absolute inset-0 w-full h-full border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102146.16613612809!2d10.073237300000001!3d36.847119100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1709666000000!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <!-- Map Markers UI -->
+                <div class="absolute inset-0 p-4">
+                    <span class="absolute top-4 left-4 bg-white/80 px-2 py-1 text-[10px] rounded shadow-sm">Rue de
+                        jasmin</span>
+                    <span
+                        class="absolute bottom-12 right-20 bg-white/80 px-2 py-1 text-[10px] rounded shadow-sm">ESPRIT</span>
+                </div>
+            </div>
+
+            <!-- Route Info -->
+            <div class="bg-gray-50 rounded-xl p-4 mb-2 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-gray-500">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm font-semibold text-gray-800">From: Ariana Soghra</div>
+                        <div class="text-sm font-semibold text-gray-800">To: ESPRIT</div>
+                    </div>
+                </div>
+                <a href="chat.html" class="text-xs text-blue-400 hover:text-blue-600 font-medium">Chat with this
+                    user</a>
+            </div>
+
+            <!-- List -->
+            <div class="space-y-1">
+                <!-- Item -->
+                <div
+                    class="bg-gray-100 rounded-lg px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700">
+                    <div class="flex items-center gap-4">
+                        <span>Jhon Doe</span>
+                        <span class="w-px h-4 bg-gray-300"></span>
+                        <span>17:00h</span>
+                    </div>
+                    <span>9DT</span>
+                </div>
+                <!-- Item -->
+                <div
+                    class="bg-gray-100 rounded-lg px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700">
+                    <div class="flex items-center gap-4">
+                        <span>Jhon Doe</span>
+                        <span class="w-px h-4 bg-gray-300"></span>
+                        <span>17:00h</span>
+                    </div>
+                    <span>9DT</span>
+                </div>
+                <!-- Selected Item -->
+                <div
+                    class="bg-blue-100 border border-blue-200 rounded-lg px-4 py-3 flex justify-between items-center text-sm font-bold text-gray-800 cursor-pointer">
+                    <div class="flex items-center gap-4">
+                        <span>Jhon Doe</span>
+                        <span class="w-px h-4 bg-blue-300"></span>
+                        <span>17:00h</span>
+                    </div>
+                    <span>9DT</span>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- Card 2 (Duplicate for layout) -->
+        <article class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden p-3">
+            <!-- Simulated Map Area -->
+            <div class="w-full h-64 bg-gray-100 rounded-xl relative overflow-hidden mb-4 border border-gray-100">
+                <!-- Google Maps Iframe -->
+                <iframe class="absolute inset-0 w-full h-full border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d102146.16613612809!2d10.073237300000001!3d36.847119100000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd337f5e7ef543%3A0xd671924e714a0275!2sTunis%2C%20Tunisia!5e0!3m2!1sen!2sus!4v1709666000000!5m2!1sen!2sus"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <!-- Route Info -->
+            <div class="bg-gray-50 rounded-xl p-4 mb-2 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="text-gray-500">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="text-sm font-semibold text-gray-800">From: Ariana Soghra</div>
+                        <div class="text-sm font-semibold text-gray-800">To: ESPRIT</div>
+                    </div>
+                </div>
+                <a href="chat.html" class="text-xs text-blue-400 hover:text-blue-600 font-medium">Chat with this
+                    user</a>
+            </div>
+
+            <!-- List -->
+            <div class="space-y-1">
+                <!-- Item -->
+                <div
+                    class="bg-gray-100 rounded-lg px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700">
+                    <div class="flex items-center gap-4">
+                        <span>Jhon Doe</span>
+                        <span class="w-px h-4 bg-gray-300"></span>
+                        <span>17:00h</span>
+                    </div>
+                    <span>9DT</span>
+                </div>
+                <!-- Item -->
+                <div
+                    class="bg-gray-100 rounded-lg px-4 py-3 flex justify-between items-center text-sm font-medium text-gray-700">
+                    <div class="flex items-center gap-4">
+                        <span>Jhon Doe</span>
+                        <span class="w-px h-4 bg-gray-300"></span>
+                        <span>17:00h</span>
+                    </div>
+                    <span>9DT</span>
+                </div>
+                <!-- Selected Item -->
+                <div
+                    class="bg-blue-100 border border-blue-200 rounded-lg px-4 py-3 flex justify-between items-center text-sm font-bold text-gray-800 cursor-pointer">
+                    <div class="flex items-center gap-4">
+                        <span>Jhon Doe</span>
+                        <span class="w-px h-4 bg-blue-300"></span>
+                        <span>17:00h</span>
+                    </div>
+                    <span>9DT</span>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-100 mt-12">
+        <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center gap-1 font-bold text-xl tracking-tight">
+                <span class="text-blue-500">/</span>COLLOCOV
+            </div>
+            <div class="text-gray-500 text-sm">
+                © 2025 Collocov. All rights reserved.
+            </div>
+            <div class="flex gap-6 text-gray-400 text-sm font-medium">
+                <a href="#" class="hover:text-blue-500 transition">Privacy</a>
+                <a href="#" class="hover:text-blue-500 transition">Terms</a>
+                <a href="#" class="hover:text-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
